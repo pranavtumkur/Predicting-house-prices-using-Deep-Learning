@@ -1,6 +1,6 @@
 # Predicting-house-prices-using-Deep-Learning
 
-![0_XMbwmj-4r80bBuIg](https://user-images.githubusercontent.com/65482013/119680127-860af380-be5e-11eb-81ec-4f7a9589ba26.jpg)
+![0_XMbwmj-4r80bBuIg (1)](https://user-images.githubusercontent.com/65482013/120058965-ffc3fc80-c06b-11eb-87fe-34ebb175f039.jpg)
 
 In this project, we start with EDA of the pricing data of houses in King County, WA to train and implement Deep Learning with an Artificial Neural Network, in order to predict price of a new property on the market.
 
