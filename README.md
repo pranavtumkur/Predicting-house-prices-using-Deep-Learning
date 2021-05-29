@@ -34,7 +34,7 @@ https://www.kaggle.com/harlfoxem/housesalesprediction
 * sqft_living15 - The square footage of interior housing living space for the nearest 15 neighbors
 * sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors
 
-## EDA Insights
+## EDA Insights & Takeouts
 
 1. Most houses cost $1-2M, which makes sense. The problem with the data is that there are a small number of high value outliers which could skew the ML model
 2. There is a slight increase in the mean price of the houses with the no. of bedrooms but this is in not a strong correlation
