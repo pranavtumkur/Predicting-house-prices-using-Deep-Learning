@@ -41,9 +41,20 @@ https://www.kaggle.com/harlfoxem/housesalesprediction
 3. The house prices increase almost linearly with the area of the house
 4. Houses in certain latitude and longitude are costlier. Places around Long -122.2 and Lat 47.65 seem like a place for costly houses, ranging from $4-8M
 5. Waterfront properties are costlier by around $0.8M
-6. Properties lying in northern King County are significantly costlier than those in south and east. Houses in the North and West are costlier by at least 
-7. 
-8. 
+6. Properties lying in northern King County are significantly costlier than those in south and east. Houses in the North and West King County are costlier by at least 35% that those in East and South.
+7. Almost all houses in the South are low priced.
+8. Properties around Lake Washington, viz. Mercer Island, Bellevue, Medina, Kirkland, are the costliest.
+9. Properties around urban areas, like Madison Park, University District and Eastgate are on the higher side.
+10. People on the mainland prefer/have higher number of bedrooms in their houses.
+11. House prices don't change much wrt the month but inflation has caused the prices to get linearly hiked year on year.
+
+## Geographical mapping
+
+To obtain insights about the change in house prices with respect to the zone, direction, latitude, longitude, affinity to the coastline and zip codes, I decided to plot the pricing and other data variation on a live map via python.
+
+I did this using the folium library and the Map function. We first try to fit the lat/long graph to s Google photo of King County but this map does not look good enough to make deep guesses.
+
+To look at the zip code or sector wise ditribution of prices, we plot a choropleth map for King County using a ![GeoJSON file](https://github.com/pranavtumkur/Predicting-house-prices-using-Deep-Learning/blob/main/us-zip-code-latitude-and-longitude.geojson) obtained from 
 
 
 
