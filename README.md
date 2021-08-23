@@ -54,7 +54,10 @@ To obtain insights about the change in house prices with respect to the zone, di
 
 I did this using the folium library and the Map function. We first try to fit the lat/long graph to s Google photo of King County but this map does not look good enough to make deep guesses.
 
-To look at the zip code or sector wise ditribution of prices, we plot a choropleth map for King County using a ![GeoJSON file](https://github.com/pranavtumkur/Predicting-house-prices-using-Deep-Learning/blob/main/us-zip-code-latitude-and-longitude.geojson) obtained from 
+To look at the zip code or sector wise ditribution of prices, we plot a choropleth map for King County using a ![GeoJSON file](https://github.com/pranavtumkur/Predicting-house-prices-using-Deep-Learning/blob/main/us-zip-code-latitude-and-longitude.geojson).
+
+## ML
+
 
 
 
