@@ -56,8 +56,33 @@ I did this using the folium library and the Map function. We first try to fit th
 
 To look at the zip code or sector wise ditribution of prices, we plot a choropleth map for King County using a ![GeoJSON file](https://github.com/pranavtumkur/Predicting-house-prices-using-Deep-Learning/blob/main/us-zip-code-latitude-and-longitude.geojson).
 
-## ML
+INFERENCE - Zip codes by themselves do not matter, but the cluster of zip codes shows a definite trend, i.e. the zone in which these zip codes lie, viz. North, East, West, South, Central, plays a huge role upon the prices of the houses. We create a new parameter called 'Zone' and populate it with N,E,W,S using the latitude and longitude of the zip code.
 
+## Builidng a ML model
+
+#### Database preparation-
+
+1. Decide record's zone (N,E,W,S) as per lat and long
+2. Convert the categorical variable of zone, using get_dummies
+3. Drop the zip code column to not mislead the ML model
+4. Make 2 columns for month and year and drop the date column
+5. Do the train, test split
+ 
+#### Creating a Deep Learning ANN Model
+
+1. Add 4 hidden layers with 19 neurons each, using relu as the activation function
+2. Use optimizer='adam' and loss='mse'
+3. Train the model with batch_size=128 for 600 epochs
+4. Record the MSE losses in a new df
+5. Plot the loss and val_loss to check if model is not overfitting the data
+
+## Evaluating the model
+
+1. Calculate the MEA and RMSE (RMSE ~ $129k, which is okay for average house costs of $5.4M)
+2. Calculate explained variance score (Explained Variance Score = 0.87 implies a very strong corelation between our predicted and true values)
+3. Plot a histogram of the 'predicted values' v/s the 'true values' of house prices (both almost coincide, which is good)
+4. Plot a scatter plot of 'predicted values' to compare to the straight line of true values to check bias and variance (Error is high only for extremely high valued properties. Otherwise bias and variance are low)
+5. Lastly, let's plot a histogram of the errors (Errors are symmetrically distrubuted across 0. This proves that we have made a good ANN model!)
 
 
 
